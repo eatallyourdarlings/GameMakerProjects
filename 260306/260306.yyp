@@ -1,0 +1,49 @@
+{
+  "$GMProject":"v1",
+  "%Name":"260306",
+  "AudioGroups":[
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+  "configs":{
+    "children":[],
+    "name":"Default",
+  },
+  "defaultScriptType":1,
+  "Folders":[
+    {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
+  "ForcedPrefabProjectReferences":[],
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2024.14.1.210",
+    "PackageID":"com.gamemaker.basiclivewallpapertemplate",
+    "PackageName":"Basic Live Wallpaper Template",
+    "PackagePublisher":"YoYo Games",
+    "PackageType":"Asset",
+    "PackageVersion":"1.0.0",
+  },
+  "name":"260306",
+  "resources":[
+    {"id":{"name":"documentation","path":"notes/documentation/documentation.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_circle","path":"objects/obj_circle/obj_circle.yy",},},
+    {"id":{"name":"rm_0","path":"rooms/rm_0/rm_0.yy",},},
+    {"id":{"name":"rm_live_wallpaper","path":"rooms/rm_live_wallpaper/rm_live_wallpaper.yy",},},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
+  ],
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
+    {"roomId":{"name":"rm_0","path":"rooms/rm_0/rm_0.yy",},},
+    {"roomId":{"name":"rm_live_wallpaper","path":"rooms/rm_live_wallpaper/rm_live_wallpaper.yy",},},
+  ],
+  "templateType":"live_wallpaper",
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+}

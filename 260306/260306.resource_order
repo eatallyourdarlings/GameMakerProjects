@@ -1,0 +1,7 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_circle","order":1,"path":"objects/obj_circle/obj_circle.yy",},
+    {"name":"rm_0","order":2,"path":"rooms/rm_0/rm_0.yy",},
+  ],
+}
