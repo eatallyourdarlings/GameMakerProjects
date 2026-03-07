@@ -17,8 +17,8 @@
   ],
   "name":"rm_0",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"260306",
+    "path":"260306.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{

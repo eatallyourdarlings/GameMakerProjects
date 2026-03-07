@@ -11,12 +11,14 @@
 //target time tt = t + 4.4
 //tt = 4.4
 
-amt = abs(sin(get_timer() / 2200000))
+show_debug_message(rr)
+
+//amt = abs(sin(get_timer() / 2200000))
 //show_debug_message(amt)
 //amt = clamp((tt - t - 1), 0, 1)
 //amt =  (tt - t) / 1
 //call_later(
-rr = lerp(r1, r2, amt)
+//rr = lerp(r1, r2, amt)
 	//)
 
 //if hold

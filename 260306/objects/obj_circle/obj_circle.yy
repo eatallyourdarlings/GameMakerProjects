@@ -10,8 +10,8 @@
   "name":"obj_circle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"260306",
+    "path":"260306.yyp",
   },
   "parentObjectId":null,
   "persistent":false,

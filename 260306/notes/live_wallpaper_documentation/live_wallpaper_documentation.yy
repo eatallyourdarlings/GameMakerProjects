@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"live_wallpaper_documentation",
+  "name":"live_wallpaper_documentation",
+  "parent":{
+    "name":"260306",
+    "path":"260306.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
