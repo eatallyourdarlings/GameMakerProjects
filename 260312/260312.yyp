@@ -9,7 +9,9 @@
     "name":"Default",
   },
   "defaultScriptType":1,
-  "Folders":[],
+  "Folders":[
+    {"$GMFolder":"","%Name":"placeholders","folderPath":"folders/placeholders.yy","name":"placeholders","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
@@ -26,7 +28,6 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_baby","path":"sprites/spr_baby/spr_baby.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
-    {"id":{"name":"spr_cursor_1","path":"sprites/spr_cursor_1/spr_cursor_1.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"spr_thing","path":"sprites/spr_thing/spr_thing.yy",},},
   ],

@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"placeholders","order":10,"path":"folders/placeholders.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"obj_baby","order":8,"path":"objects/obj_baby/obj_baby.yy",},
     {"name":"obj_button","order":6,"path":"objects/obj_button/obj_button.yy",},
@@ -7,7 +9,6 @@
     {"name":"obj_draggable","order":7,"path":"objects/obj_draggable/obj_draggable.yy",},
     {"name":"spr_baby","order":4,"path":"sprites/spr_baby/spr_baby.yy",},
     {"name":"spr_button","order":3,"path":"sprites/spr_button/spr_button.yy",},
-    {"name":"spr_cursor_1","order":9,"path":"sprites/spr_cursor_1/spr_cursor_1.yy",},
     {"name":"spr_cursor","order":2,"path":"sprites/spr_cursor/spr_cursor.yy",},
     {"name":"spr_thing","order":5,"path":"sprites/spr_thing/spr_thing.yy",},
   ],
