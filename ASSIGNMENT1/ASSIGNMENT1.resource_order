@@ -1,0 +1,12 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"Note1","order":11,"path":"notes/Note1/Note1.yy",},
+    {"name":"obj_cursor","order":2,"path":"objects/obj_cursor/obj_cursor.yy",},
+    {"name":"obj_grabbable","order":3,"path":"objects/obj_grabbable/obj_grabbable.yy",},
+    {"name":"obj_hitbox","order":9,"path":"objects/obj_hitbox/obj_hitbox.yy",},
+    {"name":"spr_cursor","order":5,"path":"sprites/spr_cursor/spr_cursor.yy",},
+    {"name":"spr_grabbable","order":8,"path":"sprites/spr_grabbable/spr_grabbable.yy",},
+    {"name":"spr_hitbox","order":10,"path":"sprites/spr_hitbox/spr_hitbox.yy",},
+  ],
+}
