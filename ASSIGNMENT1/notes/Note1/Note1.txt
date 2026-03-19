@@ -1,3 +1,7 @@
+what's the difference between the events left pressed, left down and key>left
+
+
+
 
 //first frame the button was pressed/released
 //mouse_check_button_pressed()
@@ -15,7 +19,6 @@
 //        sprite_index = spr_clear;
 //    }
 //}
-
 // The above code will loop through all instances of obj_check checking for a collision line between them and the instance running the code. The sprite of those instances will be changed depending on the return value (true or false) for the collision line.
 
 
