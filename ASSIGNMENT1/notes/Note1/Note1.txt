@@ -1,6 +1,7 @@
 what's the difference between the events left pressed, left down and key>left
 
 
+REMEMBER TO SET COLLISION BOX TO FULL WIDTH
 
 
 //first frame the button was pressed/released
