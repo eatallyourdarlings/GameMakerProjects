@@ -1,4 +1,5 @@
 event_inherited();
+
 alarm[0] = -1;
 spin_speed = 0;
 
