@@ -22,7 +22,6 @@
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},
     {"id":{"name":"obj_grabbable","path":"objects/obj_grabbable/obj_grabbable.yy",},},
-    {"id":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},},
     {"id":{"name":"obj_spinner","path":"objects/obj_spinner/obj_spinner.yy",},},
     {"id":{"name":"obj_stretch","path":"objects/obj_stretch/obj_stretch.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

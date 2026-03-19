@@ -1,1 +1,3 @@
-touched = true;
+spin_speed += 1;
+
+//flicked = true;

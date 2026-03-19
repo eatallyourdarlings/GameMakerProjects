@@ -1,7 +1,34 @@
-what's the difference between the events left pressed, left down and key>left
+
 
 
 REMEMBER TO SET COLLISION BOX TO FULL WIDTH
+
+
+
+/*
+ 0 | TWEEN_MODE_ONCE   | “once”
+ 1 | TWEEN_MODE_BOUNCE | “bounce” 
+ 2 | TWEEN_MODE_PATROL | “patrol” 
+ 3 | TWEEN_MODE_LOOP   | “loop”
+ 4 | TWEEN_MODE_REPEAT | “repeat”
+*/
+
+/* 3 = loop, true = seconds
+ target, 
+ ease,
+ mode (repetitions),
+ delta time (true=seconds, false=steps),
+ delay (to start),
+ duration,
+ property (variable),
+ start value,
+ destination value
+*/
+
+
+
+
+what's the difference between the events left pressed, left down and key>left
 
 
 //first frame the button was pressed/released
