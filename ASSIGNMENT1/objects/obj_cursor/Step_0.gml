@@ -1,104 +1,95 @@
 x = mouse_x;
 y = mouse_y;
 
+frames_max = frames_pressed == frames_to_pickup;
 
-//mouse_check_button_pressed()
+if mouse_check_button_released(INPUT_BUTTON) 
+// or mouse_check_button_pressed(INPUT_BUTTON)
+ //or frames_max 
+{
+	frames_pressed = 0;
+}
 
+if mouse_check_button(INPUT_BUTTON) and frames_pressed < frames_to_pickup{
+	frames_pressed += 1
+}
 
-// if not holding anything
-	// if position false and click = flex fingers
-	// if position true and not click = fidgety fingers (animate later)
-	// if position true and hold click = pickup (animate later), change state to holding
-// if holding something 
-	// if click start playing with the toy
-	// if hold click, change state to not holding and return toy to the bag
-
-
-// holdable code
-//if position_meeting(x,y,obj_holdable) and  not mouse_check_button(INPUT_BUTTON) {
-//	cursor_state = STATE.hover;
+//if frames_pressed = frames_to_pickup {
+////play animation (in reverse)
 //}
 
-// if button just pressed reset the timer
-//if mouse_check_button_pressed(INPUT_BUTTON) {
-//	frames_pressed = 0;
-//}
-
-
-if position_meeting(x,y,obj_holdable) {
+//function pickup_object {}
 	
-	if mouse_check_button(INPUT_BUTTON) {
-		
-		//start playing pickup animation (forward/reverse based on state when starting)
-		
-		if frames_pressed == frames_to_pickup {
-			frames_pressed = 0;
-			
-			if cursor_state == STATE.hover {
-				cursor_state = STATE.hold;
-			}
-			
-			
-			else if cursor_state == STATE.hold {
-				cursor_state = STATE.empty	
-			}
-		}
-		else {
-			frames_pressed += 1;	
-		}
-	}
 	
-	else {
-		cursor_state = STATE.hover;
+			
+//if hovering over an object you can hold:
+
+	//if not holding something: 
+		//hover animation
+		
+		//if button pressed for 60 frames
+			// set collision to target_object
+			
+		//if holding something: 
+			//set object depth to higher than the cursor
+			//object follows cursor position
+		
+
+	
+collision = instance_position(x, y, obj_holdable)
+	
+if collision {
+	show_debug_message("colliding");
+	
+	collision.image_blend = c_orange;
+	//show_debug_message(collision);
+	
+	if !target_object{
+		show_debug_message("no target");
+		cursor_state = CURSOR_STATE.HOVER;
+		
+		//picking up
+		if frames_max {
+			show_debug_message("picking up");
+			target_object = collision
+			target_object.depth = -2;
+			target_object.image_blend = c_red;
+			cursor_state = CURSOR_STATE.HOLD
+		}
 	}
 }
 
-//else if mouse_check_button_released(INPUT_BUTTON) {
-//	if cursor_state == STATE.hold {
-//		cursor_state = STATE.empty;
-//	}
-//}
+
+if target_object {
+	show_debug_message("target");
+	target_object.x = x;
+	target_object.y = y;
+	
+	
+	// dropping
+	if frames_max {
+		show_debug_message("dropping");
+		target_object.depth = 0;
+		target_object.image_blend = c_white;
+		target_object = pointer_null;
+		cursor_state = CURSOR_STATE.EMPTY
+	}
+}
 
 else {
-	cursor_state = STATE.empty;
+	cursor_state = CURSOR_STATE.EMPTY;
 }
-
-
-
-// FIX THE SPAGHETTI!
-
-switch (cursor_state) {
-	case STATE.empty: {
-		
-		
-		//cursor_state = STATE.hover;
-	} break;
-	case STATE.hold: {
-		
-	} break;
-	case STATE.hover: {
-		
-	} break;
-}
-
-
-
-// draggable code
-//if mouse_check_button(INPUT_BUTTON) {
 	
-//	if position_meeting(x,y,obj_draggable) {
-//		cursor_state = STATE.hold;
-//	}
-//	else {
-//		cursor_state = STATE.hover;
-//	}
+//		}
+//	} break;
+//	case CURSOR_STATE.hover: {
+		
+//	} break;
+//	case CURSOR_STATE.hold: {
+//		if frames_pressed = frames_to_pickup {
+//			cursor_state = CURSOR_STATE.empty;
+//		}
+//	} break;
 //}
-
-//else {
-//	cursor_state = STATE.empty;
-//}
-
 
 image_index = cursor_state;
-
-//show_debug_message(cursor_state);

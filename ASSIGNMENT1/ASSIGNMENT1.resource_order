@@ -2,6 +2,7 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"Note1","order":11,"path":"notes/Note1/Note1.yy",},
+    {"name":"obj_cursor_cursed","order":22,"path":"objects/obj_cursor_cursed/obj_cursor_cursed.yy",},
     {"name":"obj_cursor","order":2,"path":"objects/obj_cursor/obj_cursor.yy",},
     {"name":"obj_draggable","order":3,"path":"objects/obj_draggable/obj_draggable.yy",},
     {"name":"obj_holdable","order":19,"path":"objects/obj_holdable/obj_holdable.yy",},

@@ -1,8 +1,10 @@
 
 target_object = pointer_null;
 
-frames_to_pickup = 60;
+
+frames_to_pickup = 20;
 frames_pressed = 0;
+frames_max = false;
 
 depth = -1;
 sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
@@ -15,10 +17,10 @@ sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 // to maybe change to right button / left handed mouse control later!
 INPUT_BUTTON = mb_left
 
-enum STATE {
-	empty = 0,
-	hover = 1,
-	hold = 2,
+enum CURSOR_STATE {
+	EMPTY = 0,
+	HOVER = 1,
+	HOLD = 2,
 }
 
-cursor_state = STATE.empty
+cursor_state = CURSOR_STATE.EMPTY

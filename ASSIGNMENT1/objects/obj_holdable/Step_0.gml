@@ -1,11 +1,11 @@
 
 
 
-if obj_cursor.cursor_state == STATE.hold {
+if obj_cursor.cursor_state == CURSOR_STATE.HOLD {
 	image_blend = c_blue;
 	depth = -2;
 }
-else if obj_cursor.cursor_state == STATE.hover {
+else if obj_cursor.cursor_state == CURSOR_STATE.HOVER {
 	image_blend = c_red;
 	depth = 0;	
 }

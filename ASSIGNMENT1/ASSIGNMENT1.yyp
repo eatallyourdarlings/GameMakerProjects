@@ -20,6 +20,7 @@
   "name":"ASSIGNMENT1",
   "resources":[
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
+    {"id":{"name":"obj_cursor_cursed","path":"objects/obj_cursor_cursed/obj_cursor_cursed.yy",},},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},
     {"id":{"name":"obj_draggable","path":"objects/obj_draggable/obj_draggable.yy",},},
     {"id":{"name":"obj_holdable","path":"objects/obj_holdable/obj_holdable.yy",},},
