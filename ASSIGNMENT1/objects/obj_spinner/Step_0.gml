@@ -1,7 +1,5 @@
 event_inherited();
 
-
-
 if spin_speed > 0 {
 	//the rate at which the spinning decays
 	spin_speed -= .007;

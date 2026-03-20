@@ -1,4 +1,25 @@
 
+How to do function inheritance
+
+PARENT CREATE:
+activate = function () {
+	is_activated = true;
+	image_blend = c_green;
+}
+
+
+
+CHILD CREATE:
+inherited_activate = activate;
+activate = function () {
+	inherited_activate();
+	
+	if (checkbox) {
+		checkbox.activate();
+	}
+}
+
+ parent_do_something = method(id, self.do_something); 
 
 
 REMEMBER TO SET COLLISION BOX TO FULL WIDTH

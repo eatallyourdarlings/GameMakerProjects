@@ -1,8 +1,29 @@
 event_inherited();
 
-alarm[0] = -1;
 spin_speed = 0;
 
+self.interact_sound = sound_spinner_flick;
+self.pickup_sound = sound_spinner_pickup;
+self.drop_sound = sound_spinner_pickup;
+
+parent_interact = self.interact;
+interact = function(){
+	parent_interact();
+	spin_speed += 1;
+}
+
+parent_pickup = self.pickup;
+pickup = function(){
+	parent_pickup();
+	
+	// start playing the looping spin sfx
+	audio_play_sound(sound_spinner_loop, 5, true);
+}
+
+//stop playing the loop
+drop = function(){
+	
+}
 
 //flicked = false;
 //previous approach for rotating

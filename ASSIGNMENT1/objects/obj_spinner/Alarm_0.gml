@@ -1,2 +1,0 @@
-
-flicked = false;

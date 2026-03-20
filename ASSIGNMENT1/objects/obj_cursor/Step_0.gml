@@ -1,27 +1,107 @@
 x = mouse_x;
 y = mouse_y;
 
-frames_max = frames_pressed == frames_to_pickup;
+collision = instance_position(x, y, obj_holdable)
 
-if mouse_check_button_released(INPUT_BUTTON) 
-// or mouse_check_button_pressed(INPUT_BUTTON)
- //or frames_max 
-{
-	frames_pressed = 0;
+// if holding an object 
+	// set the object's location to the cursor's location
+	// set the object's render depth to the cursor's depth - 1 
+
+if target_object {
+	image_index = 2;
+	target_object.x = self.x;
+	target_object.y = self.y;
+	target_object.depth = self.depth - 1;
 }
 
-if mouse_check_button(INPUT_BUTTON) and frames_pressed < frames_to_pickup{
-	frames_pressed += 1
+// on click
+	// if not holding an object
+		// if hovering over an object spawn
+			// set target object to that object
+		
+		// if not hovering over anything
+			// play grabbity animation
+		
+		
+	// if holding an object
+		// if cursor at the object's spawn
+			// set target object to null
+			// return the object to its location
+			
+		// if cursor not at spawn
+			// do the object's unique function
+				// play its pickup sound
+
+collision_holdable = instance_position(x, y, obj_holdable)
+collision_spawn = instance_position(x, y, obj_spawn)
+
+
+
+if mouse_check_button_pressed(INPUT_BUTTON){
+	
+	// not holding anything
+	if !target_object {
+		image_index = 1;
+		
+		if collision_spawn{
+			target_object = collision_holdable;
+			target_object.pickup();
+		}
+	}
+	
+	
+	// holding something
+	else if target_object {
+		
+		// if at the spawn point
+		
+		// drop it!
+		if collision_spawn{
+			target_object.drop();
+			target_object = pointer_null;
+			
+		}
+		
+		
+		// not at spawn and clicking while holding something
+		else {
+			// do the object's unique function
+			target_object.interact();
+			//play the cursor's unique animation
+			
+		}
+		
+	}
+	
+}
+else {
+	image_index = 0;	
 }
 
-//if frames_pressed = frames_to_pickup {
-////play animation (in reverse)
+
+
+
+
+
+//image_index = cursor_state;
+
+
+
+//frames_max = frames_pressed == frames_to_pickup;
+
+//if mouse_check_button_released(INPUT_BUTTON) 
+//// or mouse_check_button_pressed(INPUT_BUTTON)
+// //or frames_max 
+//{
+//	frames_pressed = 0;
+//}
+
+//if mouse_check_button(INPUT_BUTTON) and frames_pressed < frames_to_pickup{
+//	frames_pressed += 1
 //}
 
 //function pickup_object {}
-	
-	
-			
+
 //if hovering over an object you can hold:
 
 	//if not holding something: 
@@ -33,63 +113,45 @@ if mouse_check_button(INPUT_BUTTON) and frames_pressed < frames_to_pickup{
 		//if holding something: 
 			//set object depth to higher than the cursor
 			//object follows cursor position
+	
+//if collision {
+//	//show_debug_message("colliding");
+	
+//	collision.image_blend = c_orange;
+//	//show_debug_message(collision);
+	
+//	if !target_object{
+//		//show_debug_message("no target");
+//		cursor_state = CURSOR_STATE.HOVER;
 		
-
-	
-collision = instance_position(x, y, obj_holdable)
-	
-if collision {
-	show_debug_message("colliding");
-	
-	collision.image_blend = c_orange;
-	//show_debug_message(collision);
-	
-	if !target_object{
-		show_debug_message("no target");
-		cursor_state = CURSOR_STATE.HOVER;
-		
-		//picking up
-		if frames_max {
-			show_debug_message("picking up");
-			target_object = collision
-			target_object.depth = -2;
-			target_object.image_blend = c_red;
-			cursor_state = CURSOR_STATE.HOLD
-		}
-	}
-}
-
-
-if target_object {
-	show_debug_message("target");
-	target_object.x = x;
-	target_object.y = y;
-	
-	
-	// dropping
-	if frames_max {
-		show_debug_message("dropping");
-		target_object.depth = 0;
-		target_object.image_blend = c_white;
-		target_object = pointer_null;
-		cursor_state = CURSOR_STATE.EMPTY
-	}
-}
-
-else {
-	cursor_state = CURSOR_STATE.EMPTY;
-}
-	
+//		//picking up
+//		if frames_max {
+//			//show_debug_message("picking up");
+//			target_object = collision
+//			target_object.depth = -2;
+//			target_object.image_blend = c_red;
+//			cursor_state = CURSOR_STATE.HOLD
 //		}
-//	} break;
-//	case CURSOR_STATE.hover: {
-		
-//	} break;
-//	case CURSOR_STATE.hold: {
-//		if frames_pressed = frames_to_pickup {
-//			cursor_state = CURSOR_STATE.empty;
-//		}
-//	} break;
+//	}
 //}
 
-image_index = cursor_state;
+
+//if target_object {
+//	show_debug_message("target");
+//	target_object.x = x;
+//	target_object.y = y;
+	
+	
+//	// dropping
+//	if frames_max {
+//		show_debug_message("dropping");
+//		target_object.depth = 0;
+//		target_object.image_blend = c_white;
+//		target_object = pointer_null;
+//		cursor_state = CURSOR_STATE.EMPTY
+//	}
+//}
+
+//else {
+//	cursor_state = CURSOR_STATE.EMPTY;
+//}

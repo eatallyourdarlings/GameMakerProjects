@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_holdable",
+  "%Name":"obj_cone",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_holdable",
+  "name":"obj_cone",
   "overriddenProperties":[],
   "parent":{
     "name":"ASSIGNMENT1",
     "path":"ASSIGNMENT1.yyp",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_holdable",
+    "path":"objects/obj_holdable/obj_holdable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_placeholder_1",
-    "path":"sprites/spr_placeholder_1/spr_placeholder_1.yy",
+    "name":"spr_cone",
+    "path":"sprites/spr_cone/spr_cone.yy",
   },
   "spriteMaskId":null,
   "visible":true,

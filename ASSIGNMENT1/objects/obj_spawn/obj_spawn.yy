@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_holdable",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_spawn",
+  "eventList":[],
   "managed":true,
-  "name":"obj_holdable",
+  "name":"obj_spawn",
   "overriddenProperties":[],
   "parent":{
     "name":"ASSIGNMENT1",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_placeholder_1",
-    "path":"sprites/spr_placeholder_1/spr_placeholder_1.yy",
+    "name":"spr_spawn",
+    "path":"sprites/spr_spawn/spr_spawn.yy",
   },
   "spriteMaskId":null,
   "visible":true,

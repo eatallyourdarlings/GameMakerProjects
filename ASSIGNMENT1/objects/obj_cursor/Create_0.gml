@@ -1,11 +1,6 @@
 
 target_object = pointer_null;
 
-
-frames_to_pickup = 20;
-frames_pressed = 0;
-frames_max = false;
-
 depth = -1;
 sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 
@@ -24,3 +19,7 @@ enum CURSOR_STATE {
 }
 
 cursor_state = CURSOR_STATE.EMPTY
+
+//frames_to_pickup = 20;
+//frames_pressed = 0;
+//frames_max = false;
