@@ -12,8 +12,8 @@
   "name":"obj_stretch",
   "overriddenProperties":[],
   "parent":{
-    "name":"ASSIGNMENT1",
-    "path":"ASSIGNMENT1.yyp",
+    "name":"archive",
+    "path":"folders/archive.yy",
   },
   "parentObjectId":null,
   "persistent":false,

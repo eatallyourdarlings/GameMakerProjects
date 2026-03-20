@@ -44,8 +44,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"ASSIGNMENT1",
-    "path":"ASSIGNMENT1.yyp",
+    "name":"archive",
+    "path":"folders/archive.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

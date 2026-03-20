@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cursor",
-    "path":"sprites/spr_cursor/spr_cursor.yy",
+    "name":"spr_cursor_upscale",
+    "path":"sprites/spr_cursor_upscale/spr_cursor_upscale.yy",
   },
   "spriteMaskId":null,
   "visible":true,
