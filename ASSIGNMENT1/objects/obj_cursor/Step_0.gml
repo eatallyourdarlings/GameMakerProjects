@@ -12,9 +12,16 @@ if target_object {
 	target_object.x = self.x;
 	target_object.y = self.y;
 	target_object.depth = self.depth - 1;
-	
-	obj_background_tile.scroll_speed -= 0.0055;
-	audio_sound_gain(city, audio_sound_get_gain(city) - 0.0055)
+}
+
+obj_background_tile.scroll_speed -= 0.0055;
+audio_sound_gain(city, audio_sound_get_gain(city) - 0.000055)
+audio_sound_gain(birdsong, audio_sound_get_gain(birdsong) + 0.000055)
+obj_sky.image_alpha += 0.000055;
+
+if obj_sky.image_alpha == 1 {
+	lerp(obj_background.image_alpha, 0, 5)
+	//obj_background_tile.visible = 0;
 }
 
 // on click

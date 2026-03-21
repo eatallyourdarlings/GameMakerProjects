@@ -1,5 +1,5 @@
 
-draw_text(40, 40, audio_sound_get_gain(city))
+//draw_text(40, 40, audio_sound_get_gain(city))
 
 //gui_x = 5
 //gui_y = 3

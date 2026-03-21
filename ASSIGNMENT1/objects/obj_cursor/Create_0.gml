@@ -3,8 +3,11 @@ target_object = pointer_null;
 
 
 city = audio_play_sound(sound_city, 10, true);
+birdsong = audio_play_sound(sound_birdsong, 10, true);
 
-//audio_sound_gain(city, 0.5)
+obj_sky.image_alpha = 0;
+
+audio_sound_gain(birdsong, 0)
 
 //birdsong = audio_play_sound(sound_birdsong,
 
