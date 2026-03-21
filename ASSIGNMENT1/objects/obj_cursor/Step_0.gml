@@ -7,22 +7,33 @@ y = mouse_y;
 	// set the object's location to the cursor's location
 	// set the object's render depth to the cursor's depth - 1 
 
-if target_object {
-	image_index = 2;
-	target_object.x = self.x;
-	target_object.y = self.y;
-	target_object.depth = self.depth - 1;
-}
 
+
+// slowly transition the background
 obj_background_tile.scroll_speed -= 0.0055;
-audio_sound_gain(city, audio_sound_get_gain(city) - 0.000055)
+audio_sound_gain(city, audio_sound_get_gain(city) - 0.00055)
 audio_sound_gain(birdsong, audio_sound_get_gain(birdsong) + 0.000055)
 obj_sky.image_alpha += 0.000055;
 
+alpha = 0;
+
 if obj_sky.image_alpha == 1 {
-	lerp(obj_background.image_alpha, 0, 5)
+	
+	if alpha < 1{
+		alpha += .05
+	}
+
+	obj_holdable.image_alpha = lerp(obj_holdable.image_alpha, 0, alpha)
+	
+	obj_background.image_alpha = lerp(obj_background.image_alpha, 0, alpha)
+	
 	//obj_background_tile.visible = 0;
+	target_object.drop();
+	instance_destroy(obj_holdable);
+	//obj_cone.event_destroy();
 }
+
+
 
 // on click
 	// if not holding an object
@@ -47,14 +58,28 @@ collision_holdable = instance_position(x, y, obj_holdable)
 collision_spawn = instance_position(x, y, obj_legs)
 
 
+
+if target_object {
+	image_index = 2;
+	target_object.x = self.x;
+	target_object.y = self.y;
+	//target_object.depth = self.depth - 1;
+}
+else if collision_holdable {
+	image_index = 1;
+	alarm[0] = 5;
+}
+
+
 if mouse_check_button_pressed(INPUT_BUTTON){
+	
 	
 	// not holding anything
 	if !target_object {
 		image_index = 1;
-		
 		alarm[0] = 5;
 		
+		// pick up object
 		if collision_spawn {
 			if collision_holdable {
 				target_object = collision_holdable;

@@ -1,4 +1,4 @@
-
+INPUT_BUTTON = mb_right;
 target_object = pointer_null;
 
 
@@ -11,7 +11,7 @@ audio_sound_gain(birdsong, 0)
 
 //birdsong = audio_play_sound(sound_birdsong,
 
-depth = -1;
+depth = -2;
 sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 
 // 0 not hovering over anything
@@ -20,7 +20,7 @@ sprite_set_speed(sprite_index, 0, spritespeed_framespersecond);
 // 3,4,5 holding stim toys
 
 // to maybe change to right button / left handed mouse control later!
-INPUT_BUTTON = mb_left
+
 
 //enum CURSOR_STATE {
 //	EMPTY = 0,

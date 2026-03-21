@@ -12,11 +12,13 @@ interact_sound = sound_blep;
 drop_sound = sound_pickup;
 
 pickup = function () {
+	self.depth = obj_cursor.depth - 1;
 	//image_blend = c_blue;
 	audio_play_sound(pickup_sound, 10, false);
 }
 
 drop = function () {
+	self.depth = obj_cursor.depth + 1;
 	//image_blend = c_white;
 	audio_play_sound(drop_sound, 3, false);
 	x = initial_x;
