@@ -3,6 +3,7 @@ target_object = pointer_null;
 
 
 city = audio_play_sound(sound_city, 10, true);
+tram = audio_play_sound(sound_tram, 10, true);
 birdsong = audio_play_sound(sound_birdsong, 10, true);
 
 obj_sky.image_alpha = 0;

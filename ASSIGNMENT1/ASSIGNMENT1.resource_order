@@ -27,6 +27,7 @@
     {"name":"sound_spinner_flick","order":28,"path":"sounds/sound_spinner_flick/sound_spinner_flick.yy",},
     {"name":"sound_spinner_loop","order":29,"path":"sounds/sound_spinner_loop/sound_spinner_loop.yy",},
     {"name":"sound_spinner_pickup","order":30,"path":"sounds/sound_spinner_pickup/sound_spinner_pickup.yy",},
+    {"name":"sound_tram","order":48,"path":"sounds/sound_tram/sound_tram.yy",},
     {"name":"sound_yoda","order":37,"path":"sounds/sound_yoda/sound_yoda.yy",},
     {"name":"spr_background_tile","order":41,"path":"sprites/spr_background_tile/spr_background_tile.yy",},
     {"name":"spr_background","order":39,"path":"sprites/spr_background/spr_background.yy",},

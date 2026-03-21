@@ -12,25 +12,26 @@ y = mouse_y;
 // slowly transition the background
 obj_background_tile.scroll_speed -= 0.0055;
 audio_sound_gain(city, audio_sound_get_gain(city) - 0.00055)
+audio_sound_gain(tram, audio_sound_get_gain(tram) - 0.00055)
 audio_sound_gain(birdsong, audio_sound_get_gain(birdsong) + 0.000055)
-obj_sky.image_alpha += 0.000055;
+obj_sky.image_alpha += 0.0005;
 
 alpha = 0;
 
-if obj_sky.image_alpha == 1 {
+if obj_sky.image_alpha > 1 
+//or mouse_check_button_pressed(mb_left)
+{
 	
 	if alpha < 1{
-		alpha += .05
+		alpha += .1
 	}
 
 	obj_holdable.image_alpha = lerp(obj_holdable.image_alpha, 0, alpha)
-	
 	obj_background.image_alpha = lerp(obj_background.image_alpha, 0, alpha)
 	
 	//obj_background_tile.visible = 0;
-	target_object.drop();
+	if target_object {target_object.drop();}
 	instance_destroy(obj_holdable);
-	//obj_cone.event_destroy();
 }
 
 
