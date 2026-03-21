@@ -22,6 +22,8 @@
   "name":"ASSIGNMENT1",
   "resources":[
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
+    {"id":{"name":"obj_background_tile","path":"objects/obj_background_tile/obj_background_tile.yy",},},
+    {"id":{"name":"obj_background","path":"objects/obj_background/obj_background.yy",},},
     {"id":{"name":"obj_cone","path":"objects/obj_cone/obj_cone.yy",},},
     {"id":{"name":"obj_cursor_cursed","path":"objects/obj_cursor_cursed/obj_cursor_cursed.yy",},},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},
@@ -42,6 +44,7 @@
     {"id":{"name":"sound_spinner_loop","path":"sounds/sound_spinner_loop/sound_spinner_loop.yy",},},
     {"id":{"name":"sound_spinner_pickup","path":"sounds/sound_spinner_pickup/sound_spinner_pickup.yy",},},
     {"id":{"name":"sound_yoda","path":"sounds/sound_yoda/sound_yoda.yy",},},
+    {"id":{"name":"spr_background_tile","path":"sprites/spr_background_tile/spr_background_tile.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},},
     {"id":{"name":"spr_cursor_upscale","path":"sprites/spr_cursor_upscale/spr_cursor_upscale.yy",},},

@@ -4,6 +4,8 @@
   ],
   "ResourceOrderSettings":[
     {"name":"Note1","order":11,"path":"notes/Note1/Note1.yy",},
+    {"name":"obj_background_tile","order":40,"path":"objects/obj_background_tile/obj_background_tile.yy",},
+    {"name":"obj_background","order":42,"path":"objects/obj_background/obj_background.yy",},
     {"name":"obj_cone","order":34,"path":"objects/obj_cone/obj_cone.yy",},
     {"name":"obj_cursor_cursed","order":3,"path":"objects/obj_cursor_cursed/obj_cursor_cursed.yy",},
     {"name":"obj_cursor","order":2,"path":"objects/obj_cursor/obj_cursor.yy",},
@@ -23,6 +25,7 @@
     {"name":"sound_spinner_loop","order":29,"path":"sounds/sound_spinner_loop/sound_spinner_loop.yy",},
     {"name":"sound_spinner_pickup","order":30,"path":"sounds/sound_spinner_pickup/sound_spinner_pickup.yy",},
     {"name":"sound_yoda","order":37,"path":"sounds/sound_yoda/sound_yoda.yy",},
+    {"name":"spr_background_tile","order":41,"path":"sprites/spr_background_tile/spr_background_tile.yy",},
     {"name":"spr_background","order":39,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_cone","order":31,"path":"sprites/spr_cone/spr_cone.yy",},
     {"name":"spr_cursor_upscale","order":33,"path":"sprites/spr_cursor_upscale/spr_cursor_upscale.yy",},

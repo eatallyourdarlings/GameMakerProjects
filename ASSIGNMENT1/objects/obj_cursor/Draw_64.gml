@@ -1,4 +1,6 @@
 
+draw_text(40, 40, audio_sound_get_gain(city))
+
 //gui_x = 5
 //gui_y = 3
 //draw_text(gui_x, gui_y * 5, string("cursor_state"));

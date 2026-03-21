@@ -12,17 +12,23 @@ interact = function(){
 	spin_speed += 1;
 }
 
+loop = audio_play_sound(sound_spinner_loop, 5, true);
+audio_sound_gain(loop, 0)
+
 parent_pickup = self.pickup;
 pickup = function(){
 	parent_pickup();
+	audio_sound_gain(loop, 1, 1)
 	
 	// start playing the looping spin sfx
-	audio_play_sound(sound_spinner_loop, 5, true);
+	
 }
 
 //stop playing the loop
 parent_drop = self.drop;
 drop = function(){
+	audio_sound_gain(loop, 0, 1)
+	//audio_destroy_stream(sound_spinner_loop)
 	parent_drop();
 }
 

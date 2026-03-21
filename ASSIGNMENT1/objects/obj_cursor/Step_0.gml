@@ -12,6 +12,9 @@ if target_object {
 	target_object.x = self.x;
 	target_object.y = self.y;
 	target_object.depth = self.depth - 1;
+	
+	obj_background_tile.scroll_speed -= 0.0055;
+	audio_sound_gain(city, audio_sound_get_gain(city) - 0.0055)
 }
 
 // on click
@@ -32,9 +35,9 @@ if target_object {
 			// do the object's unique function
 				// play its pickup sound
 
+
 collision_holdable = instance_position(x, y, obj_holdable)
 collision_spawn = instance_position(x, y, obj_spawn)
-
 
 
 if mouse_check_button_pressed(INPUT_BUTTON){
@@ -43,20 +46,25 @@ if mouse_check_button_pressed(INPUT_BUTTON){
 	if !target_object {
 		image_index = 1;
 		
-		if collision_spawn{
-			target_object = collision_holdable;
-			target_object.pickup();
+		alarm[0] = 5;
+		
+		if collision_spawn {
+			if collision_holdable {
+				target_object = collision_holdable;
+				target_object.pickup();
+			}
 		}
 	}
 	
 	
 	// holding something
-	else if target_object {
+	else {
 		
 		// if at the spawn point
 		
 		// drop it!
 		if collision_spawn{
+			alarm[0] = 5;
 			target_object.drop();
 			target_object = pointer_null;
 			
@@ -75,7 +83,7 @@ if mouse_check_button_pressed(INPUT_BUTTON){
 	
 }
 else {
-	image_index = 0;	
+	//image_index = 0;	
 }
 
 
