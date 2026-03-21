@@ -1,7 +1,7 @@
 x = mouse_x;
 y = mouse_y;
 
-collision = instance_position(x, y, obj_holdable)
+//collision = instance_position(x, y, obj_holdable)
 
 // if holding an object 
 	// set the object's location to the cursor's location

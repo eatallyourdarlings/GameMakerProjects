@@ -42,6 +42,7 @@
     {"id":{"name":"sound_spinner_loop","path":"sounds/sound_spinner_loop/sound_spinner_loop.yy",},},
     {"id":{"name":"sound_spinner_pickup","path":"sounds/sound_spinner_pickup/sound_spinner_pickup.yy",},},
     {"id":{"name":"sound_yoda","path":"sounds/sound_yoda/sound_yoda.yy",},},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},},
     {"id":{"name":"spr_cursor_upscale","path":"sprites/spr_cursor_upscale/spr_cursor_upscale.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},

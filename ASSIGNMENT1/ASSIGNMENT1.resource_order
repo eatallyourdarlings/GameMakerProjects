@@ -23,6 +23,7 @@
     {"name":"sound_spinner_loop","order":29,"path":"sounds/sound_spinner_loop/sound_spinner_loop.yy",},
     {"name":"sound_spinner_pickup","order":30,"path":"sounds/sound_spinner_pickup/sound_spinner_pickup.yy",},
     {"name":"sound_yoda","order":37,"path":"sounds/sound_yoda/sound_yoda.yy",},
+    {"name":"spr_background","order":39,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_cone","order":31,"path":"sprites/spr_cone/spr_cone.yy",},
     {"name":"spr_cursor_upscale","order":33,"path":"sprites/spr_cursor_upscale/spr_cursor_upscale.yy",},
     {"name":"spr_cursor","order":5,"path":"sprites/spr_cursor/spr_cursor.yy",},

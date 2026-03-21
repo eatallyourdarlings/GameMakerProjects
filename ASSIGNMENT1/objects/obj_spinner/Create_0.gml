@@ -21,8 +21,9 @@ pickup = function(){
 }
 
 //stop playing the loop
+parent_drop = self.drop;
 drop = function(){
-	
+	parent_drop();
 }
 
 //flicked = false;
