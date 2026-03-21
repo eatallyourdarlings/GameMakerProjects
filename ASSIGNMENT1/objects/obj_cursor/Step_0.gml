@@ -44,7 +44,7 @@ if obj_sky.image_alpha == 1 {
 
 
 collision_holdable = instance_position(x, y, obj_holdable)
-collision_spawn = instance_position(x, y, obj_spawn)
+collision_spawn = instance_position(x, y, obj_legs)
 
 
 if mouse_check_button_pressed(INPUT_BUTTON){
