@@ -1,0 +1,1 @@
+wrap_distance = window_get_height() - 20;

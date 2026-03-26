@@ -1,0 +1,1 @@
+draw_sprite_tiled_ext(spr_background_tile, 0, 0, draw_y, 1, 1, c_white, 1)
