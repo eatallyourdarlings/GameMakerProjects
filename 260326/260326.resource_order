@@ -16,6 +16,7 @@
     {"name":"spr_backgrounds","order":3,"path":"sprites/spr_backgrounds/spr_backgrounds.yy",},
     {"name":"spr_danger","order":7,"path":"sprites/spr_danger/spr_danger.yy",},
     {"name":"spr_goal","order":1,"path":"sprites/spr_goal/spr_goal.yy",},
+    {"name":"spr_heart","order":5,"path":"sprites/spr_heart/spr_heart.yy",},
     {"name":"spr_jewel","order":2,"path":"sprites/spr_jewel/spr_jewel.yy",},
     {"name":"spr_kenney_tiles","order":2,"path":"sprites/spr_kenney_tiles/spr_kenney_tiles.yy",},
     {"name":"spr_player","order":5,"path":"sprites/spr_player/spr_player.yy",},

@@ -37,6 +37,7 @@
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
     {"id":{"name":"spr_danger","path":"sprites/spr_danger/spr_danger.yy",},},
     {"id":{"name":"spr_goal","path":"sprites/spr_goal/spr_goal.yy",},},
+    {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},},
     {"id":{"name":"spr_jewel","path":"sprites/spr_jewel/spr_jewel.yy",},},
     {"id":{"name":"spr_kenney_tiles","path":"sprites/spr_kenney_tiles/spr_kenney_tiles.yy",},},
     {"id":{"name":"spr_kenney_tileset","path":"sprites/spr_kenney_tileset/spr_kenney_tileset.yy",},},

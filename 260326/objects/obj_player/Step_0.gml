@@ -26,7 +26,9 @@ if place_meeting(x,y+1,obj_solid){
 
 //on the ceiling
 if place_meeting(x, y-1, obj_solid) {
+	if y_speed < 0 {
 		y_speed = 0;
+	}
 }
 
 //if x_speed == 0 {image_index = 0;}
