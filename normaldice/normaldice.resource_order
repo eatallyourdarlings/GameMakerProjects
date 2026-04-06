@@ -1,0 +1,9 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"room_template","order":1,"path":"rooms/room_template/room_template.yy",},
+    {"name":"normal_colormap","order":2,"path":"sprites/normal_colormap/normal_colormap.yy",},
+    {"name":"normal_sphere","order":3,"path":"sprites/normal_sphere/normal_sphere.yy",},
+    {"name":"spr_piskie","order":4,"path":"sprites/spr_piskie/spr_piskie.yy",},
+  ],
+}
