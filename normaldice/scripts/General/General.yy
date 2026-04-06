@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"General",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"normaldice",
+    "path":"normaldice.yyp",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
