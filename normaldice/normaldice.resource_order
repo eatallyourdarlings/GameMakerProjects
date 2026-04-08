@@ -6,13 +6,17 @@
     {"name":"Tilesets","order":6,"path":"folders/Tilesets.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_boxcollider","order":16,"path":"objects/obj_boxcollider/obj_boxcollider.yy",},
     {"name":"obj_die","order":13,"path":"objects/obj_die/obj_die.yy",},
+    {"name":"obj_pip","order":14,"path":"objects/obj_pip/obj_pip.yy",},
     {"name":"obj_piskie","order":11,"path":"objects/obj_piskie/obj_piskie.yy",},
     {"name":"obj_testarrow","order":1,"path":"objects/obj_testarrow/obj_testarrow.yy",},
     {"name":"room_template","order":7,"path":"rooms/room_template/room_template.yy",},
     {"name":"General","order":12,"path":"scripts/General/General.yy",},
     {"name":"normal_colormap","order":8,"path":"sprites/normal_colormap/normal_colormap.yy",},
     {"name":"normal_sphere","order":9,"path":"sprites/normal_sphere/normal_sphere.yy",},
+    {"name":"spr_boxcollider","order":17,"path":"sprites/spr_boxcollider/spr_boxcollider.yy",},
+    {"name":"spr_pip","order":15,"path":"sprites/spr_pip/spr_pip.yy",},
     {"name":"spr_piskie","order":10,"path":"sprites/spr_piskie/spr_piskie.yy",},
   ],
 }
