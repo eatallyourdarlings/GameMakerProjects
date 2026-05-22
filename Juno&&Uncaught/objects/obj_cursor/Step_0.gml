@@ -1,4 +1,4 @@
-speed = 1/40
+
 
 //cursor goes anywhere
 //x = lerp(x,mouse_x, speed);
