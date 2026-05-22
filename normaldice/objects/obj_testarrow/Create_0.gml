@@ -25,7 +25,7 @@ reset_input = function(){
 
 	// for each obj_pip?
 	
-	obj_pip.whack(input_vector)
+	//obj_pip.whack(input_vector)
 	input_vector = [0,0]
 	arrow_length = 30;
 	arrow_size = arrow_length / 6;

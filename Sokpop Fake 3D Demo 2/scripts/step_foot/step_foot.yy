@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"step_foot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"step_foot",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

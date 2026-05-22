@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"General",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"General",
+  "parent":{
+    "name":"Juno&&Uncaught",
+    "path":"Juno&&Uncaught.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

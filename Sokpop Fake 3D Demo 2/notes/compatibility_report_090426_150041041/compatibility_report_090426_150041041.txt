@@ -1,0 +1,48 @@
+Converting GML script: /tmp/GameMakerStudio2/GMS2TEMP/ProjectTool/Sokpop Fake 3D Demo 2_256158008_gmz/mvc/scripts/circle/circle.gml
+Converted description /// @description circle(x, y, radius, color, xscale, yscale);/// @param x
+/// @param  y
+/// @param  radius
+/// @param  color
+/// @param  xscale
+/// @param  yscale
+
+Converting GML script: /tmp/GameMakerStudio2/GMS2TEMP/ProjectTool/Sokpop Fake 3D Demo 2_256158008_gmz/mvc/scripts/wp_to_sp/wp_to_sp.gml
+Converted description /// @description wp_to_sp(x, y, z);/// @param x
+/// @param  y
+/// @param  z
+
+Converting GML script: /tmp/GameMakerStudio2/GMS2TEMP/ProjectTool/Sokpop Fake 3D Demo 2_256158008_gmz/mvc/scripts/circle_3d/circle_3d.gml
+Converted description /// @description circle_3d(x, y, z, radius, color);/// @param x
+/// @param  y
+/// @param  z
+/// @param  radius
+/// @param  color
+
+Converting GML script: /tmp/GameMakerStudio2/GMS2TEMP/ProjectTool/Sokpop Fake 3D Demo 2_256158008_gmz/mvc/scripts/line_3d/line_3d.gml
+Converted description /// @description line_3d(x1, y1, z1, x2, y2, z2, width, color);/// @param x1
+/// @param  y1
+/// @param  z1
+/// @param  x2
+/// @param  y2
+/// @param  z2
+/// @param  width
+/// @param  color
+
+Converting GML script: /tmp/GameMakerStudio2/GMS2TEMP/ProjectTool/Sokpop Fake 3D Demo 2_256158008_gmz/mvc/scripts/set_forward_side/set_forward_side.gml
+Converted description /// @description set_forward_side()
+
+Converting GML script: /tmp/GameMakerStudio2/GMS2TEMP/ProjectTool/Sokpop Fake 3D Demo 2_256158008_gmz/mvc/scripts/step_foot/step_foot.gml
+Converted description /// @description step_foot(foot_index);/// @param foot_index
+
+Converting GML script: /tmp/GameMakerStudio2/GMS2TEMP/ProjectTool/Sokpop Fake 3D Demo 2_256158008_gmz/mvc/scripts/lerp_angle/lerp_angle.gml
+Converted description /// @description lerp_angle(angle, target, t)/// @param angle
+/// @param  target
+/// @param  t
+
+Game speed set to 60
+Added compatibility script 'action/action_restart_game.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script '__global_object_depths.gml'

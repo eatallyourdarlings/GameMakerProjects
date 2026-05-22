@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"set_forward_side",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"set_forward_side",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
