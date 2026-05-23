@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_curve",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_curve",
+  "parent":{
+    "name":"Juno&&Uncaught",
+    "path":"Juno&&Uncaught.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

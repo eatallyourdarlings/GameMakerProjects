@@ -1,13 +1,5 @@
 depth = 0
 
-//draw sprite on top
-
-draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend,
-image_alpha);
-image_blend = global.col_key;
-
-depth = -1
-
 // get the camera position (top left corner)
 // get the camera width and height
 // corners should be:
@@ -34,13 +26,38 @@ v_y = window_get_y();
 v_w = window_get_width();
 v_h = window_get_height();
 
-draw_text(x - 40, y - 40, $"w {v_w}, h {v_h}");
-draw_text(x - 40, y - 20, $"x {v_x}, y {v_y}");
+//draw_text(x - 40, y - 40, $"w {v_w}, h {v_h}");
+//draw_text(x - 40, y - 20, $"x {v_x}, y {v_y}");
 
-draw_line_width_colour(obj_cursor.x, obj_cursor.y, v_x, v_y, 2, global.col_hi, global.col_hi)
-draw_line_width_colour(obj_cursor.x, obj_cursor.y, v_x + v_w, v_y + v_h, 2, global.col_hi, global.col_hi)
-draw_line_width_colour(obj_cursor.x, obj_cursor.y, v_x, v_y + v_h, 2, global.col_hi, global.col_hi)
-draw_line_width_colour(obj_cursor.x, obj_cursor.y, v_x + v_w, v_y, 2, global.col_hi, global.col_hi)
+//draw_line_width_colour(obj_cursor.x, obj_cursor.y, v_x, v_y, 2, global.col_hi, global.col_hi)
+//draw_line_width_colour(obj_cursor.x, obj_cursor.y, v_x + v_w, v_y + v_h, 2, global.col_hi, global.col_hi)
+//draw_line_width_colour(obj_cursor.x, obj_cursor.y, v_x, v_y + v_h, 2, global.col_hi, global.col_hi)
+//draw_line_width_colour(obj_cursor.x, obj_cursor.y, v_x + v_w, v_y, 2, global.col_hi, global.col_hi)
 
 // view_get_xport
 // view_xport
+
+draw_set_colour(global.col_hi)
+	
+curve_direction = 90;
+curve_detail = 30;
+
+//draw_curve(obj_cursor.x, obj_cursor.y, v_x, v_y, 90, curve_detail);
+//draw_curve(obj_cursor.x, obj_cursor.y, v_x + v_w, v_y + v_h, 90, curve_detail);
+//draw_curve(obj_cursor.x, obj_cursor.y, v_x, v_y + v_h, 90, curve_detail);
+//draw_curve(obj_cursor.x, obj_cursor.y, v_x + v_w, v_y, 90, curve_detail);
+
+// going clockwise
+draw_curve(v_x, v_y, obj_cursor.x, obj_cursor.y, 300, curve_detail);
+draw_curve(v_x + v_w, v_y, obj_cursor.x, obj_cursor.y, 100, curve_detail);
+draw_curve(v_x + v_w, v_y + v_h, obj_cursor.x, obj_cursor.y, 50, curve_detail);
+draw_curve(v_x, v_y + v_h, obj_cursor.x, obj_cursor.y, 30, curve_detail);
+
+
+//draw sprite on top
+
+draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend,
+image_alpha);
+image_blend = global.col_key;
+
+depth = -1

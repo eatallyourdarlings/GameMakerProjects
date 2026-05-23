@@ -8,7 +8,7 @@
 //	}
 //}
 
-wvy = sin(get_timer()  / 5000000)
+wvy = sin(get_timer()  / 1000000)
 //line_sep = lerp(line_sep, line_sep * abs(wvy), abs(wvy));
 //print(_line_sep)
 
