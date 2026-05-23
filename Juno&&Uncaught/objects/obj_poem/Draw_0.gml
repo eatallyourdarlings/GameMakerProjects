@@ -39,7 +39,7 @@ var sep = clamp(_line_sep * wvy, _line_sep_min, _line_sep)
 for (i = 0; i < array_length(poem); i++){
 
 	draw_text(x_anchor - 300, y_anchor, $"{stanza_index}")
-	draw_text(x_anchor - 200, y_anchor + _line_sep * i, $"{poem[i,1]}");
+	//draw_text(x_anchor - 200, y_anchor + _line_sep * i, $"{poem[i,1]}");
 	
 	draw_set_colour(text_colour);
 	

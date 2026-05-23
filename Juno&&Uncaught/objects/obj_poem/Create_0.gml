@@ -11,7 +11,7 @@ text_alpha = .5;
 //self.image_alpha = .5;
 
 _line_sep = 24;
-_line_sep_min = 0
+_line_sep_min = 8;
 
 wvy = 0;
 
@@ -27,6 +27,7 @@ stanza_index = 0;
 //"   archaic"
 //]
 
+// lines as array elements
 //poem = [
 //"who will you say",
 //"    is to blame",
@@ -37,7 +38,9 @@ stanza_index = 0;
 //"a"
 //]
 
-// 4 lines max
+
+
+// stanzas are 4 lines maximum
 
 poem = [[
 @"wind is rushing past my face  
