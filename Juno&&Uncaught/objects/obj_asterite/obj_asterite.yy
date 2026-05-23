@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cursor",
+  "%Name":"obj_asterite",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_asterite","path":"objects/obj_asterite/obj_asterite.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cursor",
+  "name":"obj_asterite",
   "overriddenProperties":[],
   "parent":{
     "name":"Juno&&Uncaught",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_piskie",
-    "path":"sprites/spr_piskie/spr_piskie.yy",
+    "name":"spr_asterite",
+    "path":"sprites/spr_asterite/spr_asterite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

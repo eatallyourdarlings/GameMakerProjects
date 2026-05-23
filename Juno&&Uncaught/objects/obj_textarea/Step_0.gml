@@ -10,7 +10,7 @@ if keyboard_check_pressed(vk_space){
 
 wvy = sin(get_timer()  / 3000000)
 //line_sep = lerp(line_sep, line_sep * abs(wvy), abs(wvy));
-print(line_sep)
+//print(_line_sep)
 
 
 

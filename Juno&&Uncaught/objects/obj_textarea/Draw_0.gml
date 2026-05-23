@@ -7,7 +7,7 @@
 
 draw_set_colour(text_colour);
 
-var sep = clamp(line_sep * abs(wvy), _line_sep_min, _line_sep_max);
+var sep = clamp(_line_sep * abs(wvy), _line_sep_min, _line_sep);
 // args for sep in draw_text_ext
 // line_sep * wvy
 // clamp(line_sep * abs(wvy) // works ok!
@@ -19,7 +19,7 @@ for (i = 0; i <= poem_index; i++){
 		draw_set_colour(emphasis_colour);
 	}
 	
-	draw_text_ext(x, y + _line_sep_max * i, poem[i], sep, 600)
+	draw_text_ext(x, y + _line_sep * i, poem[i], sep, 600)
 	
 }
 

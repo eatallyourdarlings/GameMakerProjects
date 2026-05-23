@@ -10,9 +10,8 @@ text_alpha = .5;
 
 //self.image_alpha = .5;
 
-line_sep = 20;
+_line_sep = 40;
 _line_sep_min = 8
-_line_sep_max = 80
 
 wvy = 0;
 

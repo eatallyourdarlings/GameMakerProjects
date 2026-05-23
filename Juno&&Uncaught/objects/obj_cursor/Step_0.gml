@@ -16,3 +16,10 @@ y = lerp(y, clamp(mouse_y, obj_mouse_input.y - bounds, obj_mouse_input.y + bound
 
 
 // later... keep within bounds of a circle
+
+if (position_meeting(x, y, obj_asterite)){
+	speed = cursor_speed / 4;
+}	
+else {
+	speed = cursor_speed;
+}

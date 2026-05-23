@@ -22,6 +22,7 @@
   "name":"Juno&&Uncaught",
   "resources":[
     {"id":{"name":"font1","path":"fonts/font1/font1.yy",},},
+    {"id":{"name":"obj_asterite","path":"objects/obj_asterite/obj_asterite.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},
     {"id":{"name":"obj_keyboard_input_arrow","path":"objects/obj_keyboard_input_arrow/obj_keyboard_input_arrow.yy",},},
@@ -29,6 +30,7 @@
     {"id":{"name":"obj_textarea","path":"objects/obj_textarea/obj_textarea.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"General","path":"scripts/General/General.yy",},},
+    {"id":{"name":"spr_asterite","path":"sprites/spr_asterite/spr_asterite.yy",},},
     {"id":{"name":"spr_piskie","path":"sprites/spr_piskie/spr_piskie.yy",},},
     {"id":{"name":"spr_sediment","path":"sprites/spr_sediment/spr_sediment.yy",},},
   ],
