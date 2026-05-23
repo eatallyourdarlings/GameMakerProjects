@@ -1,5 +1,8 @@
 
-// when a new line is triggered (e.g. space button pressed)
+
+
+
+// when a new line is triggered (to test, space button pressed)
 	// poem_index++
 	// 
 	// draw all the previous lines full opacity
@@ -8,6 +11,8 @@
 draw_set_colour(text_colour);
 
 var sep = clamp(_line_sep * abs(wvy), _line_sep_min, _line_sep);
+//draw_text(x + 200, y, $"{sep}");
+
 // args for sep in draw_text_ext
 // line_sep * wvy
 // clamp(line_sep * abs(wvy) // works ok!
@@ -27,5 +32,3 @@ for (i = 0; i <= poem_index; i++){
 
 //make last arg (linewidth) something big so you have control over linewrap
 //draw_text_ext(x, y + 50 + _line_height*2, multiline, line_sep, 600);
-
-draw_text(x + 200, y, $"{sep}");

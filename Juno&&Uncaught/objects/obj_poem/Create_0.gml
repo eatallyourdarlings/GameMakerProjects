@@ -33,14 +33,18 @@ poem_index = 0;
 //"a"
 //]
 
-
-
-poem = [
+poem = [[
+@"wind is rushing past my face  
+and streaming through me  
+i am rarefied
+and abstract"
+,false],[
 @"who will you say
-	is to blame
+is to blame
 when i hang by
-	my cheek
-",
-@"from branch to bond
-that vicious lover's grip"
+my cheek"
+,false],[
+@"it's too late
+(it's a scene)"
+,false]
 ]
