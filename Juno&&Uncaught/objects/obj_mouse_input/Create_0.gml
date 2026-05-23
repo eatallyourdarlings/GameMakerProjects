@@ -4,8 +4,7 @@ input_vector = [0,0]
 input_angle = 0;
 
 // hello ...
-hellip_colour = #cc80e7;
-arrow_colour = hellip_colour;
+arrow_colour = global.col_hellip;
 
 //size of arrow in pixel, 
 // previously arrow_length, initialised as 0

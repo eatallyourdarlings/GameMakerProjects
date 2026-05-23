@@ -2,20 +2,24 @@
 //#124080
 //#ff3459
 
-text_colour = #b3d8cb;
-emphasis_colour = #ff3459;
+text_colour = global.col_key;
+emphasis_colour = global.col_hi;
 
 
 text_alpha = .5;
 
 //self.image_alpha = .5;
 
-_line_sep = 40;
-_line_sep_min = 8
+_line_sep = 24;
+_line_sep_min = 0
 
 wvy = 0;
 
+// for switching between scenes?
 poem_index = 0;
+
+//for 
+stanza_index = 0;
 
 //poem = [
 //"forgotten",
@@ -32,6 +36,8 @@ poem_index = 0;
 //"a",
 //"a"
 //]
+
+// 4 lines max
 
 poem = [[
 @"wind is rushing past my face  

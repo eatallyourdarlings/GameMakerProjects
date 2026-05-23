@@ -7,26 +7,54 @@
 	// 
 	// draw all the previous lines full opacity
 	// fade in the latest line
+	
+x_anchor = x
+y_anchor = y
+//y_anchor = camera_get_view_height() - 200
+
+
+draw_sprite(spr_anchor, 0, x_anchor,y_anchor)
 
 draw_set_colour(text_colour);
-
-var sep = clamp(_line_sep * abs(wvy), _line_sep_min, _line_sep);
+var sep = clamp(_line_sep * wvy, _line_sep_min, _line_sep)
+;
 //draw_text(x + 200, y, $"{sep}");
 
-// args for sep in draw_text_ext
+// alternate args for sep in draw_text_ext
 // line_sep * wvy
 // clamp(line_sep * abs(wvy) // works ok!
 // _line_sep_max + 0.5 * (1 - cos(pi * line_sep * abs(wvy) / 1)) + _line_sep_min;
 
-// poem stanzas are sections of array
-for (i = 0; i <= poem_index; i++){
-	if i == poem_index {
-		draw_set_colour(emphasis_colour);
+
+//for (i = 0; i <= poem_index; i++){
+//	if i == poem_index {
+//		draw_set_colour(emphasis_colour);
+//	}
+	
+//	draw_text_ext(x, y + _line_sep * i, poem[i], sep, 600)
+	
+//}
+
+
+for (i = 0; i < array_length(poem); i++){
+
+	draw_text(x_anchor - 300, y_anchor, $"{stanza_index}")
+	draw_text(x_anchor - 200, y_anchor + _line_sep * i, $"{poem[i,1]}");
+	
+	draw_set_colour(text_colour);
+	
+	// if current stanza is activated
+	if poem[i,1]{
+		if i == stanza_index{
+			draw_set_colour(emphasis_colour);
+		}
+		
+		draw_text_ext(x_anchor, y_anchor + abs(sep) + _line_sep * 4 * i, poem[i,0], sep, 600)		
+		//clamp(y_anchor * wvy, -_line_sep_min, -_line_sep_min)
 	}
 	
-	draw_text_ext(x, y + _line_sep * i, poem[i], sep, 600)
-	
 }
+
 
 
 
