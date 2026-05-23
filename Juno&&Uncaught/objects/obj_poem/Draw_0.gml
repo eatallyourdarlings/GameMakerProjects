@@ -10,10 +10,9 @@
 	
 x_anchor = x
 y_anchor = y
+//draw_sprite_ext(sprite_index, image_index, x_anchor, y_anchor, image_xscale, image_yscale, image_angle, image_blend,image_alpha);
 //y_anchor = camera_get_view_height() - 200
 
-
-draw_sprite(spr_anchor, 0, x_anchor,y_anchor)
 
 draw_set_colour(text_colour);
 var sep = clamp(_line_sep * wvy, _line_sep_min, _line_sep)
@@ -38,10 +37,15 @@ var sep = clamp(_line_sep * wvy, _line_sep_min, _line_sep)
 
 for (i = 0; i < array_length(poem); i++){
 
-	draw_text(x_anchor - 300, y_anchor, $"{stanza_index}")
+	// latest stanza found
+	//draw_text(x_anchor - 300, y_anchor, $"{stanza_index}")
+	
+	// whether each stanza is shown
 	//draw_text(x_anchor - 200, y_anchor + _line_sep * i, $"{poem[i,1]}");
 	
 	draw_set_colour(text_colour);
+	
+	draw_text(x_anchor, y_anchor, "*<o+{(=:");
 	
 	// if current stanza is activated
 	if poem[i,1]{

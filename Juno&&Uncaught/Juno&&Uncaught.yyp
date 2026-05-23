@@ -34,6 +34,7 @@
     {"id":{"name":"spr_anchor","path":"sprites/spr_anchor/spr_anchor.yy",},},
     {"id":{"name":"spr_asterite_white","path":"sprites/spr_asterite_white/spr_asterite_white.yy",},},
     {"id":{"name":"spr_asterite","path":"sprites/spr_asterite/spr_asterite.yy",},},
+    {"id":{"name":"spr_conch","path":"sprites/spr_conch/spr_conch.yy",},},
     {"id":{"name":"spr_piskie","path":"sprites/spr_piskie/spr_piskie.yy",},},
     {"id":{"name":"spr_sediment","path":"sprites/spr_sediment/spr_sediment.yy",},},
   ],

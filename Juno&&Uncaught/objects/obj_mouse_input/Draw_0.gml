@@ -9,6 +9,6 @@
 //draw_arrow(x, y, x + arrow_length * input_vector_normalised[0], y + arrow_length * input_vector_normalised[1], arrow_size);
 //draw_arrow(x, y, x + radius * input_vector_normalised[0] + input_vector[0], y + radius * input_vector_normalised[1] + input_vector[1], arrowhead);
 
-draw_set_colour(arrow_colour);
-draw_arrow(x, y, x + radius * input_vector_normalised[0] + input_vector[0], y + radius * input_vector_normalised[1] + input_vector[1], arrowhead);
-draw_circle(x,y, radius, true)
+//draw_set_colour(arrow_colour);
+//draw_arrow(x, y, x + radius * input_vector_normalised[0] + input_vector[0], y + radius * input_vector_normalised[1] + input_vector[1], arrowhead);
+//draw_circle(x,y, radius, true)
