@@ -4,7 +4,7 @@
 //x = lerp(x,mouse_x, speed);
 //y = lerp(y,mouse_y, speed);
 
-cursor_wvy = sin(get_timer()  / 2000000)
+cursor_wvy = sin(get_timer()  / 1000000)
 string_wvy = sin(get_timer()  / 5000000)
 
 // clamp to obj_mouse_input.radius keep within a square

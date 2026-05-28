@@ -1,6 +1,9 @@
 
 //sine wave of linesep
-//linesep = lerp(linesep
+
+
+wvy = sin(get_timer()  / 9000000)
+
 
 //if keyboard_check_pressed(vk_space){
 //	if (poem_index < array_length(poem) + 1) {
@@ -8,7 +11,7 @@
 //	}
 //}
 
-wvy = sin(get_timer()  / 1000000)
+
 //line_sep = lerp(line_sep, line_sep * abs(wvy), abs(wvy));
 //print(_line_sep)
 

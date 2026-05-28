@@ -19,8 +19,8 @@ y_anchor = global.height - global.height / 6 * 5;
 
 //draw_text(x_anchor, y_anchor, "*<o+{(=:");
 
-var sep = clamp(_line_sep * wvy, _line_sep_min, _line_sep)
-;
+var sep = clamp(_line_sep * abs(wvy), _line_sep_min, _line_sep * 2);
+
 //draw_text(x + 200, y, $"{sep}");
 
 // alternate args for sep in draw_text_ext
@@ -54,7 +54,7 @@ for (i = 0; i < array_length(poem); i++){
 			//draw_set_colour(emphasis_colour);
 		}
 		
-		draw_text_ext(x_anchor, y_anchor + sep + _line_sep * 4 * i, poem[i,0], sep, 600)		
+		draw_text_ext(x_anchor + i * 24, y_anchor + sep * i * i + _line_sep * 4 * i, poem[i,0], sep, 600)		
 		//clamp(y_anchor * wvy, -_line_sep_min, -_line_sep_min)
 	}
 	

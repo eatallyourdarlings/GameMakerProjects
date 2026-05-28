@@ -7,7 +7,7 @@ text_alpha = .5;
 //self.image_alpha = .5;
 
 _line_sep = 24;
-_line_sep_min = 8;
+_line_sep_min = 12;
 
 wvy = 0;
 
@@ -43,13 +43,13 @@ poem = [[
 and streaming through me  
 i am rarefied
 and abstract"
-,false],[
+,true],[
 @"who will you say
 is to blame
 when i hang by
 my cheek"
-,false],[
+,true],[
 @"it's too late
 (it's a scene)"
-,false]
+,true]
 ]

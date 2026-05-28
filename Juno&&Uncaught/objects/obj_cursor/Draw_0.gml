@@ -59,9 +59,10 @@ draw_curve(v_x, v_y + v_h, obj_cursor.x, obj_cursor.y, 30 + wvy_angle * string_w
 
 //draw sprite on top
 
-draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend,image_alpha);
+//draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend,image_alpha);
+draw_sprite_ext(spr_anchor, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend,image_alpha);
 image_blend = global.col_key;
 draw_set_colour(global.col_key);
-draw_text_ext_transformed(x, y + 10, "*<o+{(=:",0, 400, 0.8, 0.8 * cursor_wvy, 270);
+draw_text_ext_transformed(x, y + 4, "*<o+{(=:",0, 400, 0.6, 0.6 * cursor_wvy, 270);
 
 depth = -1
