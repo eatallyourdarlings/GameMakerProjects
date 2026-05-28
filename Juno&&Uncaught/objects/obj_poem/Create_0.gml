@@ -43,13 +43,13 @@ poem = [[
 and streaming through me  
 i am rarefied
 and abstract"
-,true],[
+,false],[
 @"who will you say
 is to blame
 when i hang by
 my cheek"
-,true],[
+,false],[
 @"it's too late
 (it's a scene)"
-,true]
+,false]
 ]
