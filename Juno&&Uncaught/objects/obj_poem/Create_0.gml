@@ -2,10 +2,6 @@
 //#124080
 //#ff3459
 
-text_colour = global.col_key;
-emphasis_colour = global.col_hi;
-
-
 text_alpha = .5;
 
 //self.image_alpha = .5;

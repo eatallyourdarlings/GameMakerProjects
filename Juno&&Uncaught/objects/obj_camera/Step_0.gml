@@ -28,4 +28,7 @@ camera_set_view_pos(view_camera[0], camera_x, camera_y)
 
 
 
-// subtley lean the camera
+// subtley lean the camera?
+camera_wvy = sin(get_timer()  / 5000000)
+camera_set_view_angle(view_camera[0], 0 + camera_wvy)
+//camera_angle = lerp(camera_angle,camera_angle+1,speed)

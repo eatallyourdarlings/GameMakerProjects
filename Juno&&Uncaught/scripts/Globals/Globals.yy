@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Colours",
+  "%Name":"Globals",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Colours",
+  "name":"Globals",
   "parent":{
     "name":"Juno&&Uncaught",
     "path":"Juno&&Uncaught.yyp",
