@@ -36,7 +36,6 @@ v_y = camera_get_view_y(view_camera[0]);
 v_w = camera_get_view_width(view_camera[0]);
 v_h = camera_get_view_height(view_camera[0]);
 
-
 //draw_text(x - 40, y - 40, $"w {v_w}, h {v_h}");
 //draw_text(x - 40, y - 20, $"x {v_x}, y {v_y}");
 
@@ -78,3 +77,4 @@ depth = -1
 //draw_set_colour(global.col_hi);
 
 //draw_circle(mouseTargetX, mouseTargetY, 20, true);
+

@@ -1,3 +1,4 @@
+blink_time = 0;
 
 xstart = room_width/4
 ystart = room_height/4
