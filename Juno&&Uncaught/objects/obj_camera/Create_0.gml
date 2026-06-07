@@ -3,6 +3,7 @@
 last_blink_start_time = 0;
 current_room_blinks = 0;
 frames_blinking = 0;
+asterite_room = false;
 
 blink_anim = animation_start(spr_blink);
 blink_anim.image_index = 11;

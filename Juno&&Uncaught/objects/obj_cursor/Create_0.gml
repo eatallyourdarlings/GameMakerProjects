@@ -1,5 +1,5 @@
 
-cursor_speed = 1/300;
+cursor_speed = 1/440;
 speed = cursor_speed;
 window_set_cursor(cr_none);
 

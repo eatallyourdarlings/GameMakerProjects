@@ -19,6 +19,11 @@ animation_run();
 		
 //}
 
+if instance_exists(obj_asterite){
+	asterite_room = true	
+}
+	
+
 
 // BLINK !
 if mouse_check_button(mb_left) and mouse_check_button(mb_right)
@@ -29,9 +34,15 @@ if mouse_check_button(mb_left) and mouse_check_button(mb_right)
 	frames_blinking++;
 	
 	// incremement the counter of how many times you've blinked
-	if frames_blinking == 20
+	if (frames_blinking == 20)
 	{
-		current_room_blinks++;
+		if (!asterite_room){	
+			current_room_blinks++;
+		}
+		else if (position_meeting(obj_cursor.x, obj_cursor.y, obj_asterite))
+		{
+			current_room_blinks++;
+		}
 	}
 	
 	//if animation_finished(){

@@ -1,6 +1,6 @@
 asterite_wvy = sin(get_timer()  / 30000000)
 
-if (self.active) {
+//if (self.active) {
 	
 	if (self.constellated) {
 		self.image_speed = asterite_speed * 3;
@@ -8,26 +8,27 @@ if (self.active) {
 		//y = ystart * asterite_wvy * 0.1
 	}
 	
-	else {
+	else if (self.active) {
 		if radius != 0 {radius = lerp(radius, 0, .22);}
 	}
-}
+//}
 
 else {
 	self.image_speed = asterite_speed; 
 	if radius < 44 {radius = lerp(radius, 44, .22);}	
 }
-	
-	
 
 
 if collision_circle(x, y, 44, obj_cursor, false, true){
 	//frames_touching++;
 	//if (frames_touching == 1){
-	self.constellated = true;	
-	self.active = true;
-	obj_poem.poem[self.asterite_index, 1] = true;
-	obj_poem.stanza_index = self.asterite_index;
+	self.constellated = true;
+	
+	if (obj_camera.frames_blinking == 30){
+		self.active = true;
+		obj_poem.poem[self.asterite_index, 1] = true;
+		obj_poem.stanza_index = self.asterite_index;
+	}
 	//}
 }
 else {
