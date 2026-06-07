@@ -8,24 +8,44 @@
 //}
 
 
-if mouse_check_button(mb_left) && mouse_check_button(mb_right){
-	// blink animation!	
-	blink_time = current_time;	
-	print("blink!");
+// BLINK !
+if mouse_check_button(mb_left) and mouse_check_button(mb_right){
+	frames_blinking++;
+	
+	if frames_blinking == 1 {
+		current_room_blinks++;
+	}
+	else if frames_blinking > 1000{
+		// blink animation!	
+		last_blink_start_time = current_time;			
+		if (current_time = last_blink_start_time + 5000) {
+		print("5 seconds after blink");
+		last_blink_start_time = 0;
+} 
+	}
+
+	
+	print("blinking!");
 	
 	//fade to next frame in comic
 	
-	if (room_next(room) == 1)
+	//if (room_next(room) != -1)
+	if (room_next(room) == 1 and obj_room_counter.counter == current_room_blinks)
 	{
+		current_room_blinks = 0;
 	    room_goto_next();
 	}
 }
 
+if mouse_check_button_released(mb_left) or mouse_check_button_released(mb_right){
+	if frames_blinking > 0 {
+		// play release animation
+		print("just unblinked!");
+	}
+	frames_blinking = 0;
+}
 
-if (current_time = blink_time + 5000) {
-	print("5 seconds after blink");
-	blink_time = 0;
-} 
+
 
 
 

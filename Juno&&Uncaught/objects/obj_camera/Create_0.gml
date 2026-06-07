@@ -1,4 +1,6 @@
-blink_time = 0;
+last_blink_start_time = 0;
+current_room_blinks = 0;
+frames_blinking = 0;
 
 xstart = room_width/4
 ystart = room_height/4

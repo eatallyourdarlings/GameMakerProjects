@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_asterite_white",
-    "path":"sprites/spr_asterite_white/spr_asterite_white.yy",
+    "name":"spr_asterite",
+    "path":"sprites/spr_asterite/spr_asterite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
