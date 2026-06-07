@@ -59,9 +59,9 @@ wvy_angle = 15;
 
 // going clockwise
 draw_curve(v_x, v_y, obj_cursor.x, obj_cursor.y, 70 + (wvy_angle + 5) * string_wvy, curve_detail);
-draw_curve(v_x + v_w, v_y, obj_cursor.x, obj_cursor.y,  + (wvy_angle + 10) * string_wvy, curve_detail);
-draw_curve(v_x + v_w, v_y + v_h, obj_cursor.x, obj_cursor.y, 180 + (wvy_angle - 10) * string_wvy, curve_detail);
-draw_curve(v_x, v_y + v_h, obj_cursor.x, obj_cursor.y, 50 + wvy_angle * string_wvy, curve_detail);
+draw_curve(v_x + v_w, v_y + global.height * 1/3, obj_cursor.x, obj_cursor.y, -60 + (wvy_angle + 10) * string_wvy, curve_detail);
+draw_curve(v_x + v_w - global.width * 2/3, v_y + v_h, obj_cursor.x, obj_cursor.y, 120 + (wvy_angle - 10) * string_wvy, curve_detail);
+//draw_curve(v_x, v_y + v_h, obj_cursor.x, obj_cursor.y, 40 + wvy_angle * string_wvy, curve_detail);
 
 
 //draw sprite on top

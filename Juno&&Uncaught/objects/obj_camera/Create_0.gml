@@ -1,9 +1,24 @@
+
+// BLINK
 last_blink_start_time = 0;
 current_room_blinks = 0;
 frames_blinking = 0;
 
-xstart = room_width/4
-ystart = room_height/4
+blink_anim = animation_start(spr_blink);
+blink_anim.image_index = 11;
+blink_anim_direction = 0;
+//determines image_speed pos or neg
+//0 = negative (reverse), 1 = positive
+blink_anim.image_speed = -10;
+animation_set_looping(false);
+animation_set_pause(false);
+
+// POSITIONING CAMERA
+xstart = room_width/4;
+ystart = room_height/4;
+
+camera_x = 0;
+camera_y = 0;
 
 //could add a lil bit of leaning later!?
 camera_angle = 0
