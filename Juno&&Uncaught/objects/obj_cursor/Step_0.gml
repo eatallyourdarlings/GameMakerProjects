@@ -25,16 +25,15 @@ else {
 //x = lerp(x,clamp(mouse_x, obj_mouse_input.x - obj_mouse_input.radius, obj_mouse_input.x + obj_mouse_input.radius), speed);
 //y = lerp(y, clamp(mouse_y, obj_mouse_input.y - obj_mouse_input.radius, obj_mouse_input.y + obj_mouse_input.radius), speed);
 
-bounds = obj_mouse_input.radius;
-//x = lerp(x,clamp(mouse_x, obj_mouse_input.x - bounds, obj_mouse_input.x + bounds), speed);
-//y = lerp(y, clamp(mouse_y, obj_mouse_input.y - bounds, obj_mouse_input.y + bounds), speed);
+//bounds = obj_mouse_input.radius;
+//x = lerp(x,clamp(mouseTargetX, obj_mouse_input.x - bounds, obj_mouse_input.x + bounds), speed);
+//y = lerp(y,clamp(mouseTargetY, obj_mouse_input.y - bounds, obj_mouse_input.y + bounds), speed);
 
-x = lerp(x,clamp(mouseTargetX, obj_mouse_input.x - bounds, obj_mouse_input.x + bounds), speed);
-//x = lerp(y,clamp(mouseTargetY, mouseTargetY - bounds, mouseTargetY + bounds), speed);
-y = lerp(y,clamp(mouseTargetY, obj_mouse_input.y - bounds, obj_mouse_input.y + bounds), speed);
 
-// later... keep within bounds of a circle
-// later... keep within bounds of a circle
+// without bounds
+x = lerp(x, mouseTargetX, speed);
+y = lerp(y, mouseTargetY, speed);
+
 
 if (position_meeting(x, y, obj_asterite)){
 	speed = cursor_speed / 3;

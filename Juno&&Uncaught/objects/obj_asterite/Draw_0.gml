@@ -1,5 +1,5 @@
 draw_self()
-if self.constellated 
+if self.active
 {
 	image_blend = global.col_hi;
 	draw_set_colour(global.col_hi);
